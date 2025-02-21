@@ -1,4 +1,5 @@
 const backendDomain = 'https://backend-twitter-i30a.onrender.com/'
+// const backendDomain = 'http://localhost:8080/'
 const SummaryApi = {
     signUP: {
         url: `${backendDomain}api/signup`,

@@ -40,7 +40,7 @@ const Home = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/get-product'); // Use correct API URL
+      const response = await fetch('https://backend-twitter-i30a.onrender.com/api/get-product'); // Use correct API URL
       const data = await response.json();
       setProducts(data.data || []); // Extract the 'data' field
     } catch (error) {
@@ -54,7 +54,7 @@ const Home = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', padding: '20px' }}>
-      <button 
+      <button
         style={{ padding: '10px 20px', color: 'white', backgroundColor: 'blue', borderRadius: '8px', border: 'none', cursor: 'pointer', marginBottom: '20px' }}
         onClick={() => setIsModalOpen(true)}
       >

@@ -88,7 +88,7 @@ const UploadProduct = ({ onClose, fetchData }) => {
       <div className='bg-white p-4 rounded w-full max-w-2xl h-full max-h-[80%] overflow-hidden'>
 
         <div className='flex justify-between items-center pb-3'>
-          <h2 className='font-bold'>Upload Product</h2>
+          <h2 className='font-bold'>Upload Details</h2>
           <div className='w-fit ml-auto text-2xl hover:text-red-600 cursor-pointer' onClick={onClose}>
             <CgClose />
           </div>
@@ -100,7 +100,7 @@ const UploadProduct = ({ onClose, fetchData }) => {
             type="text"
             id="productName"
             name="productName"
-            placeholder='Enter Product Name'
+            placeholder='Enter First Name'
             value={data.productName}
             onChange={handleOnChange}
             className='p-2 bg-slate-100'
@@ -112,7 +112,7 @@ const UploadProduct = ({ onClose, fetchData }) => {
             type="text"
             id="brandName"
             name="brandName"
-            placeholder='Enter Brand Name'
+            placeholder='Enter Last Name'
             value={data.brandName}
             onChange={handleOnChange}
             className='p-2 bg-slate-100'
@@ -141,7 +141,7 @@ const UploadProduct = ({ onClose, fetchData }) => {
             <div className='p-2 bg-slate-100 border rounded h-32 w-full flex justify-center items-center cursor-pointer'>
               <div className='text-slate-500 flex justify-center items-center flex-col gap-2'>
                 <span className='text-4xl'><FaCloudUploadAlt /></span>
-                <p className='text-sm'>Upload Product Image</p>
+                <p className='text-sm'>Upload Profile Image</p>
                 <input type="file" id="uploadImageInput" className='hidden' onChange={handleUploadProduct} />
               </div>
             </div>
@@ -204,14 +204,14 @@ const UploadProduct = ({ onClose, fetchData }) => {
           <label htmlFor="description" className='mt-3'>Description : </label>
           <textarea
             className='h-28 bg-slate-100 border resize-none p-1'
-            placeholder='Enter Product Description'
+            placeholder='Enter  Description'
             rows={3}
             onChange={handleOnChange}
             name="description"
             value={data.description}
           ></textarea>
 
-          <button className='px-3 py-2 bg-red-600 text-white mb-10 hover:bg-red-700'>Upload Tweet</button>
+          <button className='px-3 py-2 bg-red-600 text-white mb-10 hover:bg-red-700'>Upload</button>
         </form>
 
       </div >
